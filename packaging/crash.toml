@@ -1,0 +1,19 @@
+# Settings for Burnout CRASH!, loaded automatically from the folder the
+# executable is in. Any command-line flag can be set here (same name, without
+# the leading --). Command-line flags and REX_<NAME> environment variables win.
+
+# --- Game license ---------------------------------------------------------
+# Burnout CRASH! is an Xbox Live Arcade game: without a license it runs as the
+# trial version. This build ships unlocked; set 0 to play the trial instead.
+#   0 = trial    1 = full game
+license_mask = 1
+
+# --- Defaults ---------------------------------------------------------------
+gpu_plugin = "xenos"
+log_level = "info"
+# Present at the display refresh rate instead of redrawing as fast as possible.
+vulkan_allow_present_mode_immediate = false
+vulkan_allow_present_mode_mailbox = false
+# One present per game frame: steady pacing, VRR-friendly, and frame-rate
+# overlays (MangoHud) measure the game itself.
+present_on_guest_swap = true

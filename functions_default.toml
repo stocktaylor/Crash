@@ -1,0 +1,237 @@
+# DEFAULT.XEX (0x82000000-0x82A20000): function boundaries static analysis
+# missed (vtable-only / tail-branch-only targets). Empty table = let the
+# analyzer auto-detect the extent. Codegen reports some as "UnresolvedCall ...
+# target not in any function"; the rest show up at runtime and `rex triage`
+# appends them. Keep [functions] the LAST table in this file.
+[functions]
+
+# Added by rex build: codegen UnresolvedCall, tail-branch target (b from 0x8252A624).
+0x8252C800 = {}
+
+# Added by rex build: codegen UnresolvedCall, tail-branch target (b from 0x8252A638).
+0x8252C808 = {}
+
+# Added by rex build: codegen UnresolvedCall, tail-branch target (b from 0x8252A648).
+0x8252C810 = {}
+
+# Added by rex build: codegen UnresolvedCall, tail-branch target (b from 0x8252A660).
+0x8252C818 = {}
+
+# Added by rex build: codegen UnresolvedCall, tail-branch target (b from 0x8286E64C).
+0x8286E578 = {}
+
+# Added by rex build: codegen UnresolvedCall, tail-branch target (b from 0x828707E4).
+0x828700E0 = {}
+
+# Added by rex build: codegen UnresolvedCall, tail-branch target (b from 0x8287146C).
+0x82871398 = {}
+
+# Added by rex build: codegen UnresolvedCall, tail-branch target (b from 0x8292DD94).
+0x8292D928 = {}
+
+# Added by rex build: codegen UnresolvedCall, tail-branch target (b from 0x8252C804).
+0x82546D18 = {}
+
+# Added by rex build: codegen UnresolvedCall, tail-branch target (b from 0x8252C80C).
+0x82546D20 = {}
+
+# Added by rex build: codegen UnresolvedCall, tail-branch target (b from 0x8252C814).
+0x82546D28 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945500 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945BC8 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945BE0 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945BF8 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945C10 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945C28 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945C40 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945C58 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945C70 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945C88 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945CA0 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945CB8 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945CD0 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945CE8 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945D00 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945D18 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945D30 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945D48 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945D60 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82945D78 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947568 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947580 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947598 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947618 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947630 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947648 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947660 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947678 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947690 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x829476A8 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x829476C0 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x829476D8 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x829476F0 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947708 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947748 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947760 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947778 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947790 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x829477A8 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x829477C0 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x829477D8 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x829478A8 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x829478C0 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x829479E0 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x829479F8 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947A10 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947A28 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947A40 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947A58 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947A98 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82947AB0 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x8282BC88 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82645C78 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82645C18 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82645C38 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82645BE0 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x8219E690 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x821C8490 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x8279EEF0 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82725DA8 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82795078 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82718B90 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82795138 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82861300 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x82869FB8 = {}
+
+# Added by rex triage: unregistered indirect-call target.
+0x8286B060 = {}

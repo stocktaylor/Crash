@@ -1,0 +1,15 @@
+# DLL/CRASH.DLL.XEX (0x8A000000-0x8AE50000): function boundaries static
+# analysis missed (vtable-only / tail-branch-only targets). Empty table = let
+# the analyzer auto-detect the extent. Codegen reports some as "UnresolvedCall
+# ... target not in any function"; the rest show up at runtime and
+# `rex triage` appends them. Keep [functions] the LAST table in this file.
+[functions]
+
+# Added by rex build: codegen UnresolvedCall, tail-branch target (b from 0x8ABA1A2C).
+0x8ABA19DC = {}
+
+# Removed 0x8A601E1C and 0x8A9A599C (added by rex triage before the
+# jump-table-li-addis SDK fix): they are switch case labels inside
+# sub_8A6018C8 / sub_8A9A4F00, reached only because the missed switches were
+# emitted as indirect calls. As function entries they split the real
+# functions and leave branches back into them unresolved.
